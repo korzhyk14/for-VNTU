@@ -11,3 +11,4 @@
         this.keeper = keeper;
         if (!typeOfList) throw new Error("Type is not response");
         if (!keeper) throw new Error("Keeper is not response");
+this.Add = function (elements) {
