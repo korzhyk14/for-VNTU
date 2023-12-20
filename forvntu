@@ -21,3 +21,4 @@ if ($.isArray(elements)) {
      }
             } else if ($.isPlainObject(elements)) {
    if (!elements.id) {
+ throw new Error("Element index: " + i + " is not have id property");
