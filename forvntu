@@ -24,3 +24,5 @@ if ($.isArray(elements)) {
  throw new Error("Element index: " + i + " is not have id property");
 }
                     if (collection[elements[i].id]) {
+           throw new Error("Element with id: " + elements.id + " is already exists");
+                }
