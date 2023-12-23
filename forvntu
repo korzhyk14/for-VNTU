@@ -26,3 +26,4 @@ if ($.isArray(elements)) {
                     if (collection[elements[i].id]) {
            throw new Error("Element with id: " + elements.id + " is already exists");
                 }
+  if (collection[elements.id]) {
