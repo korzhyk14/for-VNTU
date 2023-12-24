@@ -27,3 +27,5 @@ if ($.isArray(elements)) {
            throw new Error("Element with id: " + elements.id + " is already exists");
                 }
   if (collection[elements.id]) {
+}
+                    collection[elements[i].id] = new typeOfList(elements[i], this);
