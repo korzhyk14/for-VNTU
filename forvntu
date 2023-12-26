@@ -31,3 +31,6 @@ if ($.isArray(elements)) {
                     collection[elements[i].id] = new typeOfList(elements[i], this);
   } else {
                 throw new Error('Error type: must be object or array');
+ }
+            return this.List();
+        };
