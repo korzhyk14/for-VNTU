@@ -36,3 +36,5 @@ if ($.isArray(elements)) {
         };
 this.Clear = function () {
 collection = [];
+return this.List();
+        };
