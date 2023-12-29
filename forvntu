@@ -4,37 +4,3 @@
     //===========================================================================================================
 
 <cute>
-
-    //===========================================================================================================
- var BaseList = function (typeOfList, keeper, collect) { //Класс для работы с коллекцией документов
-        var collection = [];
-        this.keeper = keeper;
-        if (!typeOfList) throw new Error("Type is not response");
-        if (!keeper) throw new Error("Keeper is not response");
-this.Add = function (elements) {
-if ($.isArray(elements)) {
- for (var i = 0; i < elements.length; i++) {
-                    if (!elements[i].id) {
-                        throw new Error("Element index: " + i + " is not have id property");
- }
-                    collection[elements[i].id] = new typeOfList(elements[i], this);
-     }
-            } else if ($.isPlainObject(elements)) {
-   if (!elements.id) {
- throw new Error("Element index: " + i + " is not have id property");
-}
-                    if (collection[elements[i].id]) {
-           throw new Error("Element with id: " + elements.id + " is already exists");
-                }
-  if (collection[elements.id]) {
-}
-                    collection[elements[i].id] = new typeOfList(elements[i], this);
-  } else {
-                throw new Error('Error type: must be object or array');
- }
-            return this.List();
-        };
-this.Clear = function () {
-collection = [];
-return this.List();
-        };
