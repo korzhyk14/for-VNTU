@@ -9,3 +9,4 @@
 
 
  var BaseList = function (typeOfList, keeper, collect) { //Класс для работы с коллекцией документов
+ var collection = [];
