@@ -26,3 +26,4 @@ for (var i = 0; i < elements.length; i++) {
  collection[elements[i].id] = new typeOfList(elements[i], this);
  }
 } else if ($.isPlainObject(elements)) {
+ if (!elements.id) {
