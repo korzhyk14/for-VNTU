@@ -17,3 +17,4 @@ if (!keeper) throw new Error("Keeper is not response
     this.Add = function (elements) {
    if ($.isArray(elements)) {
    for (var i = 0; i < elements.length; i++) {
+  if (!elements[i].id) {
