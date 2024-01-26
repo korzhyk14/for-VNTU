@@ -20,3 +20,4 @@ if (!keeper) throw new Error("Keeper is not response
   if (!elements[i].id) {
  throw new Error("Element index: " + i + " is not have id property");
   }
+ if (collection[elements[i].id]) {
