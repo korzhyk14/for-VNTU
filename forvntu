@@ -23,3 +23,4 @@ if (!keeper) throw new Error("Keeper is not response
  if (collection[elements[i].id]) {
 throw new Error("Element with id: " + elements[i].id + " is already exists");
    }
+ collection[elements[i].id] = new typeOfList(elements[i], this);
